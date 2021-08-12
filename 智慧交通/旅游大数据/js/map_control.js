@@ -94,13 +94,13 @@ function char1() {
                 color : '#ffffff',
 
             },
-            data:['客运车','危险品车','网约车','学生校车']
+            data:['无人机1','无人机2','无人机3','无人机4']
         },
 
         calculable : false,
         series : [
             {
-                name:'车类型',
+                name:'无人机类型',
                 type:'pie',
                 radius : ['40%', '70%'],
                 itemStyle : {
@@ -124,10 +124,10 @@ function char1() {
                     }
                 },
                 data:[
-                    {value:335, name:'客运车'},
-                    {value:310, name:'危险品车'},
-                    {value:234, name:'网约车'},
-                    {value:135, name:'学生校车'}
+                    {value:335, name:'无人机1'},
+                    {value:310, name:'无人机2'},
+                    {value:234, name:'无人机3'},
+                    {value:135, name:'无人机4'}
 
                 ]
             }

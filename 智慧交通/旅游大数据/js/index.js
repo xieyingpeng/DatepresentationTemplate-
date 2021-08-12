@@ -27,13 +27,13 @@ function char1() {
                 color : '#ffffff',
 
             },
-            data:['客运车','危险品车','网约车','学生校车']
+            data:['无人机1','无人机2','无人机3','无人机4']
         },
 
         calculable : false,
         series : [
             {
-                name:'车类型',
+                name:'无人机类型',
                 type:'pie',
                 radius : ['40%', '70%'],
                 itemStyle : {
@@ -57,10 +57,10 @@ function char1() {
                     }
                 },
                 data:[
-                    {value:335, name:'客运车'},
-                    {value:310, name:'危险品车'},
-                    {value:234, name:'网约车'},
-                    {value:135, name:'学生校车'}
+                    {value:335, name:'无人机1'},
+                    {value:310, name:'无人机2'},
+                    {value:234, name:'无人机3'},
+                    {value:135, name:'无人机4'}
 
                 ]
             }
@@ -84,7 +84,7 @@ function char2() {
         },
         grid: {show:'true',borderWidth:'0'},
         legend: {
-            data:['行驶', '停车','熄火','离线'],
+            data:['行驶速度', '温度','湿度'],
             textStyle : {
                 color : '#ffffff',
 
@@ -114,7 +114,7 @@ function char2() {
         yAxis : [
             {
                 type : 'category',
-                data : ['客运车','危险品车','网约车','学生校车'],
+                data : ['无人机1','无人机2','无人机3','无人机4'],
                 axisLabel: {
                     show: true,
                     textStyle: {
@@ -131,33 +131,33 @@ function char2() {
         ],
         series : [
             {
-                name:'行驶',
+                name:'行驶速度',
                 type:'bar',
                 stack: '总量',
                 itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-                data:[320, 302, 301, 334]
+                data:[320, 340,125,213]
             },
             {
-                name:'停车',
+                name:'当前环境温度',
                 type:'bar',
                 stack: '总量',
                 itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-                data:[120, 132, 101, 134]
+                data:[40, 32, 41, 34]
             },
             {
-                name:'熄火',
+                name:'当前环境湿度',
                 type:'bar',
                 stack: '总量',
                 itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-                data:[220, 182, 191, 234]
+                data:[56,75,24,64]
             },
-            {
-                name:'离线',
+          /* {
+                name:'当前所在位置',
                 type:'bar',
                 stack: '总量',
                 itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-                data:[150, 212, 201, 154]
-            }
+                data:['云南','贵州','四川','重庆']
+            } */
 
         ]
     };
@@ -172,7 +172,7 @@ function char3() {
 
     option = {
         legend: {
-            data:['车辆行驶数量'],
+            data:['无人机行驶数量'],
             textStyle : {
                 color : '#ffffff',
 
@@ -183,7 +183,7 @@ function char3() {
         calculable : false,
         tooltip : {
             trigger: 'axis',
-            formatter: "Temperature : <br/>{b}km : {c}°C"
+            formatter: "Temperature : <br/>{b}km : {c}°C:58%"
         },
         xAxis : [
             {
@@ -220,12 +220,12 @@ function char3() {
                     }
                 },
                 boundaryGap : false,
-                data : ['0', '10', '20', '30', '40', '50', '60', '70', '80']
+                data : ['0', '10', '20', '30', '40', '50', '60', '100', '200']
             }
         ],
         series : [
             {
-                name:'车辆行驶数量',
+                name:'无人机行驶数量',
                 type:'line',
                 smooth:true,
                 itemStyle: {
@@ -266,7 +266,7 @@ function char4() {
             {
                 type : 'category',
                 splitLine: {show:false},
-                data : ['客运车','危险品车','网约车','学生校车'],
+                data : ['WIFI型传感器',    '以太网型传感器'],
                 axisLabel: {
                     show: true,
                     textStyle: {
@@ -291,11 +291,11 @@ function char4() {
         series : [
 
             {
-                name:'报警数量',
+                name:'温传感器报警次数',
                 type:'bar',
                 stack: '总量',
                 itemStyle : { normal: {label : {show: true, position: 'inside'}}},
-                data:[2900, 1200, 300, 200, 900, 300]
+                data:[1, 2,3,4,5,6,7,8,9,10]
             }
         ]
     };
